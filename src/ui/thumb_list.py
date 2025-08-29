@@ -22,6 +22,7 @@ class ThumbList(QListWidget):
 
     def set_thumb_size(self, px: int):
         """Set thumbnail size maintaining 16:9 aspect ratio."""
+        #changed thumb size --- 
         # Maintain 16:9 aspect ratio (width:height)
         height = int(px * 9 / 16)
         self.setIconSize(QSize(px, height))
